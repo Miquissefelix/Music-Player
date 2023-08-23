@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music player</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Josefin+Sans:wght@100&family=Merriweather:wght@700&family=Playfair+Display:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--mother div player-->
+    <div class="player">
+      <!--imagemdisplay-->
+      <div class="imagemdisplay">
+        <img alt="Album art" class="img" />
+      </div>
+
+      <!--Music describe-->
+      <div class="music-descr">
+        <!-- <h1 id="titulo"> Mais Um Pouco</h1>
+        <h2 id="artista">Classic Nova</h2> -->
+        <h1 id="titulo"></h1>
+        <h2 id="artista"></h2>
+      </div>
+
+      <!--Time music-->
+      <div class="music-time">
+        <span class="currenttime">0:00</span>
+        <span><i class="fa-solid fa-heart" style="color: #191818"></i></span>
+        <span class="durectiontime">0:00</span>
+      </div>
+
+      <div class="progress-bar">
+        <div class="progress" id="progresses"></div>
+      </div>
+      <!--btn music-->
+      <div class="btn-music">
+        <!--individual btn music-->
+        <button class="btn1" id="backbtn">
+          <i class="fa-solid fa-backward-fast" style="color: black"></i>
+        </button>
+        <button id="playbtn">
+          <i class="fa-solid fa-play" style="color: rgba(0, 0, 0, 0.912)"></i>
+        </button>
+
+        <button class="btn2" id="pausebtn">
+          <i class="fa-solid fa-pause" style="color: rgba(0, 0, 0, 0.912)"></i>
+        </button>
+
+        <button class="btn3" id="nextbtn">
+          <i class="fa-solid fa-forward-fast" style="color: black"></i>
+        </button>
+
+        <button id="playlistBtn"> <i class="fa-solid fa-list" style="color: #000000;"></i></button>
+
+        <div id="playlistContainer" class="playlist-container">
+          <ul id="playlist" class="playlist-list">
+            <!-- Os itens da playlist serão adicionados aqui dinamicamente -->
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <audio></audio>
+    <script src="playermusic.js"></script>
+  </body>
+</html>

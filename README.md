@@ -20,5 +20,9 @@
 If you want to contribute to this project, feel free to open a pull request. All contributions are welcome!
 
 
+
+
+![music-player](https://github.com/Miquissefelix/Music-Player/assets/101923168/bb330c85-40ac-43a4-9336-3b70bcac76d9)
+
 ##githubpage link
 
